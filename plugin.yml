@@ -1,6 +1,6 @@
 ---
 name: AntiExplosions
-version: 1.0.3
+version: 1.0.4
 main: NhanAZ\AntiExplosions\Main
 api: 5.0.0
 src-namespace-prefix: NhanAZ\AntiExplosions

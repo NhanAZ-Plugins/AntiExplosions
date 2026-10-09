@@ -15,9 +15,12 @@ class Main extends PluginBase implements Listener {
 		$this->saveDefaultConfig();
 	}
 
-	public function onExplosionPrime(EntityPreExplodeEvent $event) {
+	public function onExplosionPrime(EntityPreExplodeEvent $event): void {
 		$worldName = $event->getEntity()->getPosition()->getWorld()->getDisplayName();
 		$worlds = $this->getConfig()->get("Worlds", []);
+		if (!is_array($worlds)) {
+			$worlds = [];
+		}
 		switch ($this->getConfig()->get("Mode", "all")) {
 			case "all":
 				$event->setBlockBreaking(false);
@@ -31,6 +34,9 @@ class Main extends PluginBase implements Listener {
 				if (!in_array($worldName, $worlds, true)) {
 					$event->setBlockBreaking(false);
 				}
+				break;
+			default:
+				$event->setBlockBreaking(false);
 				break;
 		}
 	}
