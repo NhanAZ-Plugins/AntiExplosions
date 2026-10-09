@@ -29,7 +29,7 @@ The plugin handles `EntityPreExplodeEvent` and sets block breaking to false in s
 
 ## Build and validation
 
-CI uses [DevTools v1.0.1](https://github.com/NhanAZ/DevTools/releases/tag/v1.0.1) with a pinned Axolotl-PM source revision. It runs PHPStan level max, lints the source, builds a standalone PHAR, checks the included manifest, source, configuration and license, then uploads the artifact with build metadata.
+CI uses [DevTools](https://github.com/NhanAZ/DevTools) with a pinned Axolotl-PM source revision. It runs PHPStan level max, lints the source, builds a standalone PHAR, checks the included manifest, source, configuration and license, then uploads the artifact with build metadata.
 
 For a local build with that DevTools release, run:
 
