@@ -13,7 +13,7 @@ The minimum server patch release and compatibility across every Axolotl-PM 5.x r
 
 ## Installation
 
-1. Download `AntiExplosions.phar` from a successful [Build workflow](https://github.com/NhanAZ-Plugins/AntiExplosions/actions/workflows/build.yml) or a verified GitHub release when available.
+1. Download `AntiExplosions.phar` from the [v1.0.4 release](https://github.com/NhanAZ-Plugins/AntiExplosions/releases/tag/v1.0.4).
 2. Place the PHAR in the server's `plugins` directory.
 3. Start the server to generate `config.yml`, then stop it before editing the configuration.
 4. Restart the server after changing the configuration.
